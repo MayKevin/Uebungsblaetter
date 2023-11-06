@@ -1,0 +1,16 @@
+public class Prims {
+    public static void main(String[] args) {
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
+        for (int i = a; i <= b; i++) {
+            boolean c = false;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    c = true;
+                }
+            if (!c)
+                System.out.println(i);
+            }
+        }
+    }
+}
